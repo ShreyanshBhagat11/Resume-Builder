@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(98, 91, 206), rgb(221, 134, 173));
+}
+
+label {
+    /* color: rgb(105, 105, 105); */
+    color: black;
+    padding: 1px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table,
+td,
+tr {
+    padding: 20px;
+    margin: 1%;
+}
+
+.Dropeffect button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: blue;
+}
+
+span.more-details {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+span.more-details {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    /* transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg); */
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+
+/*input.transition {
+    position: relative;
+}
+
+input.transition:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 4, 255, 0.753);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+input.transition:focus {
+    visibility: visible;
+    transform: scaleX(1);
+}*/
+
+
+/*.wrapper {
+    background-color: #FFF;
+    border-radius: 2px;
+    box-shadow: 0px 2px 1px 0px #DDD;
+    box-sizing: border-box;
+    height: 300px;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+    position: absolute;
+    top: 50%;
+    width: 300px;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: dodgerblue;
+}
+
+.input:focus+.underline {
+    transform: scale(1);
+}
+
+.underline {
+    background-color: dodgerblue;
+    display: inline-block;
+    height: 2px;
+    left: 50px;
+    margin-top: -4px;
+    position: absolute;
+    top: 185px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    width: 202px;
+}*/
+
+.bgcolor-input {
+    padding: 4%;
+    width: 300px;
+    margin-top: 5px;
+    background-color: rgba(222, 233, 240, 0.514);
+    border: none;
+    /* transition: border 0.3s ease 0s; */
+}
+
+.bgcolor-input:focus,
+textarea:focus {
+    /* transition: 0.2s ease-out all .1s; */
+    border-bottom: 3px solid rgb(9, 17, 129);
+}
+
+
+/* Add more details CSS */
+
+
+/*.Dropeffect {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) 
+
+.active,
+.Dropeffect:hover {
+    background-color: #ccc;
+}
+
+
+/* Style the accordion panel. Note: hidden by default 
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+*/
+
+textarea {
+    resize: none;
+    padding: 4%;
+    /* margin-top: 2px; */
+    background-color: rgba(222, 233, 240, 0.514);
+    border: none;
+}
+
+.btn div {
+    display: inline-block;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    width: max-content;
+    background-color: rgba(222, 233, 240, 0.514);
+    border-radius: 23px;
+}
+
+.btn div:hover,
+.btn div:active {
+    background-color: rgba(72, 134, 185, 0.514);
+}
