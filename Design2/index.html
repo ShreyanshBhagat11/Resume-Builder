@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Design 2</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div id="container" contenteditable="true">
+        <aside>
+            <div class="drop-zone" contenteditable="false">
+                <img class="personal-img" id="userIcon" alt="personal image" src="images/sample-personal-image.jpg">
+                <!-- <img id="userIcon" src="assets/img/user.png" alt="UserPhoto"> -->
+                <!-- <span id="upload" class="drop-zone__prompt"><p>Click <br> to <br> upload</p></span> -->
+                <input id="picfile" type="file" name="photoFile" accept="image/x-png,image/gif,image/jpeg" class="drop-zone__input" hidden="hidden">
+            </div>
+            <h2 class="person-name"> Awosome man</h2>
+            <ul class="personal-details">
+                <li> <i contenteditable="false" class="fas fa-user-tie"></i> Web Developer</li>
+                <li> <i contenteditable="false" class="fas fa-globe-asia"></i> Somewhere, Anywhere</li>
+                <li> <i contenteditable="false" class="fas fa-inbox"></i> Testing@testing.com</li>
+                <li> <i contenteditable="false" class="fas fa-phone"></i> 123-456-789</li>
+            </ul>
+
+            <hr>
+            <h2 class="head-section"><i contenteditable="false" class="fas fa-gem"></i> Skills <button onclick="addSkill()" contenteditable="false" id="addSkill">Add More</button></h2>
+
+            <ul class="details-list" id="skill-section">
+                <div class="skill">
+                    <div class="label">
+                        Python
+                    </div>
+                    <div>
+                        <div class="progress-back" contenteditable="false">
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text"></label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text"></label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text"></label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text"></label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="label">
+                        Java
+                    </div>
+                    <div>
+                        <div class="progress-back" contenteditable="false">
+                            <div class="rate">
+                                <input type="radio" id="st5" name="rate2" value="5" />
+                                <label for="st5" title="text"></label>
+                                <input type="radio" id="st4" name="rate2" value="4" />
+                                <label for="st4" title="text"></label>
+                                <input type="radio" id="st3" name="rate2" value="3" />
+                                <label for="st3" title="text"></label>
+                                <input type="radio" id="st2" name="rate2" value="2" />
+                                <label for="st2" title="text"></label>
+                                <input type="radio" id="st1" name="rate2" value="1" />
+                                <label for="st1" title="text"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="label">
+                        Git
+                    </div>
+                    <div class="progress-back" contenteditable="false">
+                        <div class="rate">
+                            <input type="radio" id="git-star5" name="rate3" value="5" />
+                            <label for="git-star5" title="text"></label>
+                            <input type="radio" id="git-star4" name="rate3" value="4" />
+                            <label for="git-star4" title="text"></label>
+                            <input type="radio" id="git-star3" name="rate3" value="3" />
+                            <label for="git-star3" title="text"></label>
+                            <input type="radio" id="git-star2" name="rate3" value="2" />
+                            <label for="git-star2" title="text"></label>
+                            <input type="radio" id="git-star1" name="rate3" value="1" />
+                            <label for="git-star1" title="text"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="label">
+                        Team Work
+                    </div>
+                    <div class="progress-back" contenteditable="false">
+                        <div class="rate">
+                            <input type="radio" id="TW-star5" name="rate4" value="5" />
+                            <label for="TW-star5" title="text"></label>
+                            <input type="radio" id="TW-star4" name="rate4" value="4" />
+                            <label for="TW-star4" title="text"></label>
+                            <input type="radio" id="TW-star3" name="rate4" value="3" />
+                            <label for="TW-star3" title="text"></label>
+                            <input type="radio" id="TW-star2" name="rate4" value="2" />
+                            <label for="TW-star2" title="text"></label>
+                            <input type="radio" id="TW-star1" name="rate4" value="1" />
+                            <label for="TW-star1" title="text"></label>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+            <hr>
+            <h2 class="head-section"><i contenteditable="false" class="fas fa-language"></i> Languages <button onclick="addLang()" contenteditable="false" id="addLang">Add More</button></h2>
+            <ul class="details-list" id="lang-section">
+                <div class="lang">
+                    <div class="label">
+                        English
+                    </div>
+                    <div class="progress-back" contenteditable="false">
+                        <div class="rate">
+                            <input type="radio" id="lang1-star5" name="rate5" value="5" />
+                            <label for="lang1-star5" title="text"></label>
+                            <input type="radio" id="lang1-star4" name="rate5" value="4" />
+                            <label for="lang1-star4" title="text"></label>
+                            <input type="radio" id="lang1-star3" name="rate5" value="3" />
+                            <label for="lang1-star3" title="text"></label>
+                            <input type="radio" id="lang1-star2" name="rate5" value="2" />
+                            <label for="lang1-star2" title="text"></label>
+                            <input type="radio" id="lang1-star1" name="rate5" value="1" />
+                            <label for="lang1-star1" title="text"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lang">
+                    <div class="label">
+                        Hindi
+                    </div>
+                    <div class="progress-back" contenteditable="false">
+                        <div class="rate">
+                            <input type="radio" id="lang2-star5" name="rate6" value="5" />
+                            <label for="lang2-star5" title="text"></label>
+
+                            <input type="radio" id="lang2-star4" name="rate6" value="4" />
+                            <label for="lang2-star4" title="text"></label>
+                            <input type="radio" id="lang2-star3" name="rate6" value="3" />
+                            <label for="lang2-star3" title="text"></label>
+                            <input type="radio" id="lang2-star2" name="rate6" value="2" />
+                            <label for="lang2-star2" title="text"></label>
+                            <input type="radio" id="lang2-star1" name="rate6" value="1" />
+                            <label for="lang2-star1" title="text"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lang">
+                    <div class="label">
+                        Gujarati
+                    </div>
+                    <div class="progress-back" contenteditable="false">
+                        <div class="rate">
+                            <input type="radio" id="lang3-star5" name="rate7" value="5" />
+                            <label for="lang3-star5" title="text"></label>
+                            <input type="radio" id="lang3-star4" name="rate7" value="4" />
+                            <label for="lang3-star4" title="text"></label>
+                            <input type="radio" id="lang3-star3" name="rate7" value="3" />
+                            <label for="lang3-star3" title="text"></label>
+                            <input type="radio" id="lang3-star2" name="rate7" value="2" />
+                            <label for="lang3-star2" title="text"></label>
+                            <input type="radio" id="lang3-star1" name="rate7" value="1" />
+                            <label for="lang3-star1" title="text"></label>
+                        </div>
+                    </div>
+                </div>
+
+            </ul>
+        </aside>
+
+        <main>
+            <section id="first-section">
+                <h2 class="head-section"><i contenteditable="false" class="fas fa-briefcase"></i> Work Experience
+                    <i class='bx bx-download generate-pdf' contenteditable="false" title="Generate PDF" id="download"></i></h2>
+                <!-- <i class='fas fa-download generate-pdf' contenteditable="false" title="Generate PDF" id="download"></i></h2> -->
+
+                <div class="data-details">
+                    <h3>Data Scintest / somewhere.com</h3>
+                    <span><i contenteditable="false" class="fas fa-calendar-alt"></i> Jan 2020 - <span class="green-span">Current</span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                </div>
+                <hr>
+                <div class="data-details">
+                    <h3>Automation Solutions / AutomationSolutions.com</h3>
+                    <span><i contenteditable="false" class="fas fa-calendar-alt"></i> May 2018 - <span> Dec 2019</span></span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit blanditiis, illo debitis dolore ex laudantium! Distinctio nihil eligendi optio alias expedita, dolores ipsam possimus ad vel adipisci sed error. Eaque architecto inventore
+                        mollitia libero.</p>
+                </div>
+                <hr>
+                <div class="data-details">
+                    <h3>Junior Developer / example.com</h3>
+                    <span><i contenteditable="false" class="fas fa-calendar-alt"></i> Sep 2017 - <span>May 2018</span></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odit voluptas porro nesciunt exercitationem optio quod dicta aperiam atque labore tempora velit, minus, consequuntur nulla ullam cum iste quia placeat voluptatum </p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="head-section"><i contenteditable="false" class="fas fa-user-graduate"></i> Education </h2>
+                <div class="data-details">
+                    <h3>Masters Degree - Data Science</h3>
+                    <span><i contenteditable="false" class="fas fa-calendar-alt"></i> Aug 2018 - <span>May 2020</span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                </div>
+                <hr>
+                <div class="data-details">
+                    <h3>Bachelor's Degree - Computer Science</h3>
+                    <span><i contenteditable="false" class="fas fa-calendar-alt"></i> Sep 2014 - <span>Jun 2018</span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                </div>
+                <hr>
+                <div class="data-details">
+                    <h3>High School</h3>
+                    <span><i contenteditable="false" class="fas fa-calendar-alt"></i> <span>Jul 2014</span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- 
+	<footer>
+		<p>Find me on social media</p>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-linkedin-in"></i></a>
+			<a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+			<a href="#"><i class="fab fa-github"></i></a>
+	</footer> -->
+    <script src="js/design2.js"></script>
+    <script src="/Design1/assets/js/html2pdf.bundle.min.js"></script>
+    <script src="addFunction.js"></script>
+</body>
+
+</html>

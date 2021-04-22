@@ -5,11 +5,12 @@
 }
 
 body {
-    background: linear-gradient(135deg, rgb(98, 91, 206), rgb(221, 134, 173));
+    background: linear-gradient(135deg, rgb(136, 132, 196), rgb(224, 146, 181));
 }
 
 label {
     /* color: rgb(105, 105, 105); */
+    font-size: 18px;
     color: black;
     padding: 1px;
 }
@@ -23,6 +24,12 @@ td,
 tr {
     padding: 20px;
     margin: 1%;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Dropeffect button {
@@ -114,8 +121,9 @@ input:focus::-webkit-input-placeholder {
 }*/
 
 .bgcolor-input {
-    padding: 4%;
-    width: 300px;
+    font-size: 20px;
+    padding: 3%;
+    width: 380px;
     margin-top: 5px;
     background-color: rgba(222, 233, 240, 0.514);
     border: none;
@@ -125,7 +133,7 @@ input:focus::-webkit-input-placeholder {
 .bgcolor-input:focus,
 textarea:focus {
     /* transition: 0.2s ease-out all .1s; */
-    border-bottom: 3px solid rgb(9, 17, 129);
+    border-bottom: 3.10px solid rgb(9, 17, 129);
 }
 
 
@@ -165,23 +173,88 @@ textarea:focus {
 
 textarea {
     resize: none;
+    font-size: 20px;
     padding: 4%;
+    width: 835;
     /* margin-top: 2px; */
     background-color: rgba(222, 233, 240, 0.514);
     border: none;
 }
 
+
+/* .btn {
+    display: flex;
+    flex-direction: column;
+} */
+
 .btn div {
-    display: inline-block;
+    display: flex;
+    /* justify-content: space-evenly; */
     cursor: pointer;
     padding: 15px;
+    margin: 15px 0px;
     border: none;
-    width: max-content;
+    /* width: max-content; */
     background-color: rgba(222, 233, 240, 0.514);
     border-radius: 23px;
 }
 
+
+/* 
 .btn div:hover,
 .btn div:active {
     background-color: rgba(72, 134, 185, 0.514);
+} */
+
+.btn p {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.skill-section div {
+    padding: 20px;
+}
+
+.skill-section div:hover {
+    background-color: rgba(25, 105, 155, 0.514);
+}
+
+#bar5:active,
+#bar4:active,
+#bar3:active,
+#bar2:active,
+#bar1:active {
+    background-color: rgba(25, 105, 155, 0.514);
+}
+
+.skill-section label {
+    padding: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    /* margin-left: 60ox; */
+}
+
+.skill-section input[type="radio"] {
+    background-color: transparent;
+}
+
+#label1 {
+    /* position: relative;
+    left: 500px; */
+    margin-left: 160px;
+}
+
+#label1::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: -1px;
+    height: 100%;
+    background-color: rgb(128, 204, 20);
+    opacity: 0;
+    transition: opacity 0.1s ease 0s;
+    border-radius: 4px;
 }
