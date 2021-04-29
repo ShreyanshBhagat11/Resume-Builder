@@ -191,7 +191,8 @@
     }*/
    @media screen and (max-width: 430px) {
         .content h1 {
-            margin: 15px -7px;
+            margin: 15px -20px;
+           font-size: 40px;
         }
         .content::before {
             width: 100vw;
@@ -235,9 +236,7 @@
             top: 400px;
             left: 50px;
         }
-        .content h1 {
-            font-size: 40px;
-        }
+      
         footer {
             top: 1510px;
         }
