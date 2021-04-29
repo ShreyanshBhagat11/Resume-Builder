@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <div id="container" contenteditable="true">
         <aside>
             <div class="drop-zone" contenteditable="false">
-                <img class="personal-img" id="userIcon" alt="personal image" src="images/sample-personal-image.jpg">
+                <img class="personal-img" id="userIcon" alt="personal image" src="/Design1/assets/img/user5.jpg">
                 <!-- <img id="userIcon" src="assets/img/user.png" alt="UserPhoto"> -->
                 <!-- <span id="upload" class="drop-zone__prompt"><p>Click <br> to <br> upload</p></span> -->
                 <input id="picfile" type="file" name="photoFile" accept="image/x-png,image/gif,image/jpeg" class="drop-zone__input" hidden="hidden">
@@ -28,7 +29,7 @@
             </ul>
 
             <hr>
-            <h2 class="head-section"><i contenteditable="false" class="fas fa-gem"></i> Skills <button onclick="addSkill()" contenteditable="false" id="addSkill">Add More</button></h2>
+            <h2 class="head-section"><i contenteditable="false" class="fas fa-gem"></i> Skills <button onclick="addSkillBar()" contenteditable="false" id="addSkill">Add More</button></h2>
 
             <ul class="details-list" id="skill-section">
                 <div class="skill">
@@ -116,7 +117,7 @@
                 </div>
             </ul>
             <hr>
-            <h2 class="head-section"><i contenteditable="false" class="fas fa-language"></i> Languages <button onclick="addLang()" contenteditable="false" id="addLang">Add More</button></h2>
+            <h2 class="head-section"><i contenteditable="false" class="fas fa-language"></i> Languages <button onclick="addLangBar()" contenteditable="false" id="addLang">Add More</button></h2>
             <ul class="details-list" id="lang-section">
                 <div class="lang">
                     <div class="label">
@@ -238,10 +239,11 @@
 			<a href="#"><i class="fab fa-linkedin-in"></i></a>
 			<a href="#"><i class="fab fa-snapchat-ghost"></i></a>
 			<a href="#"><i class="fab fa-github"></i></a>
-	</footer> -->
-    <script src="js/design2.js"></script>
+        </footer> -->
+    <script src="/Design2/js/design2.js"></script>
     <script src="/Design1/assets/js/html2pdf.bundle.min.js"></script>
-    <script src="addFunction.js"></script>
+    <script src="/Design2/js/add.js"></script>
+    <!-- <script type="text/javascript" src="js/addFunction.js"></script> -->
 </body>
 
 </html>
