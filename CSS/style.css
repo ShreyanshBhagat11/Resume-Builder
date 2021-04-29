@@ -143,7 +143,10 @@
     }
     
     @media screen and (max-width: 430px) {
-        #middle-heading::before {
+       .content h1 {
+            margin: 15px -7px;
+        } 
+       #middle-heading::before {
             height: 1700px;
             background-color: rgba(182, 171, 171, 0.11);
         }
@@ -176,7 +179,8 @@
             right: 70px;
         }
         #startBtn {
-            left: 200px;
+            top: 500px;
+            left: 150px;
         }
         .content h1 {
             font-size: 40px;
