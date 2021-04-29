@@ -6,6 +6,7 @@
     
     html {
         scroll-behavior: smooth;
+        transition: all 1s ease-in-out;
     }
     
     body {
@@ -247,6 +248,10 @@ footer .tab.active {
     }
     
     @media screen and (max-width: 430px) {
+        #middle-heading::before {
+            height: 1700px;
+            background-color: rgba(182, 171, 171, 0.11);
+        }
         #img-section {
             display: flex;
             flex-wrap: wrap;
@@ -264,14 +269,71 @@ footer .tab.active {
         }
         #middle-heading {
             text-align: center;
-            margin-top: 560px;
+            margin-top: 760px;
             font-size: 30px;
             font-weight: bold;
+        }
+        .Label {
+            font-size: 30px;
+            position: relative;
+            top: 300px;
+            /* left: 0px; */
+            right: 70px;
         }
         #startBtn {
             left: 200px;
         }
         .content h1 {
             font-size: 40px;
+        }
+        footer {
+            top: 1570px;
+        }
+    }
+    
+    @media screen and (min-width: 429px) and (max-width: 1381px) {
+        #middle-heading::before {
+            height: 2350px;
+            position: absolute;
+            top: -2px;
+            background-color: rgba(182, 171, 171, 0.11);
+        }
+        #img-section {
+            display: flex;
+            flex-wrap: wrap;
+            /* grid-template-rows: repeat(1, auto); */
+            flex-direction: column;
+        }
+        .img-size {
+            height: 826px;
+            width: 530px;
+        }
+        #img-section img {
+            display: block;
+            margin: 35px auto;
+            z-index: -1;
+        }
+        #middle-heading {
+            text-align: center;
+            position: relative;
+            top: 130px;
+            font-size: 45px;
+            font-weight: bold;
+        }
+        .Label {
+            font-size: 45px;
+            position: relative;
+            top: 300px;
+            /* left: 0px; */
+            right: 70px;
+        }
+        #startBtn {
+            left: 200px;
+        }
+        .content h1 {
+            font-size: 40px;
+        }
+        footer {
+            top: 2300px;
         }
     }
