@@ -190,11 +190,21 @@
         }
     }*/
    @media screen and (max-width: 430px) {
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .content h1 {
+            /* display: block; */
+            /* margin: 15px auto; */
+            font-size: 40px;
+        }
+      /*.content h1 {
             display: block;
             margin: 15px auto;
            font-size: 40px;
-        }
+        }*/
         .content::before {
             width: 100vw;
             height: 700px;
