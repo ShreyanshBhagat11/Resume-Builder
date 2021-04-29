@@ -200,7 +200,6 @@
         #middle-heading::before {
             top: 700px;
             height: 1700px;
-            top: 440px;
             background-color: rgba(182, 171, 171, 0.11);
         }
         #img-section {
@@ -233,8 +232,8 @@
             right: 70px;
         }
         #startBtn {
-            top: 500px;
-            left: 150px;
+            top: 400px;
+            left: 50px;
         }
         .content h1 {
             font-size: 40px;
