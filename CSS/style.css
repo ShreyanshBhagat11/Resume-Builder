@@ -144,7 +144,7 @@
     
     @media screen and (max-width: 430px) {
        .content h1 {
-            margin: 15px -7px;
+            margin: 15px -15px;
         } 
        #middle-heading::before {
             height: 1700px;
@@ -179,8 +179,8 @@
             right: 70px;
         }
         #startBtn {
-            top: 500px;
-            left: 150px;
+            top: 430px;
+            left: 40px;
         }
         .content h1 {
             font-size: 40px;
